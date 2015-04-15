@@ -12,7 +12,7 @@ if ((s1 === s2) && (s2 ===s3) && (s3 === s1)) {
 //compare all combination three sides for ex)2,2,8
 //moved this function above 'isoscles', otherwise it would not output 'not a triangle' due to its condition
 } else if ((s1 + s2 <= s3) || (s2 + s3 <= s1) || (s3 + s1 <= s2)) {
-   triangleType = "Not a triangle";
+   triangleType = alert("Oops! Not a triangle. Let's try again.");
 //compare all combination of two sides of the triangle to make sure they are same
  } else if ((s1 === s2) || (s2 ===s3) || (s1 === s3)) {
     triangleType = "Isosceles";

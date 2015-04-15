@@ -1,0 +1,8 @@
+Need three objects
+Each will require its own properties
+Will need to output the matching properties per object
+
+var newEquilateral = { side1: inputteds1,
+                    side2: inputteds2,
+                    side3: inputteds3 };
+$("ul"#triangles").append("<li><span class='triangle'>" + )
