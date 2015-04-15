@@ -36,8 +36,12 @@ $(document).ready(function() {
       var s3 = parseInt($("input#s3").val());
       var result = triangle(s1,s2,s3);
       //result for all three variables
-
       $(".result_triangleType").text(result);
+      $(".result_triangleType1").text(s1);
+      $(".result_triangleType2").text(s2);
+      $(".result_triangleType3").text(s3);
+
+
 
       $("#result").show();
       event.preventDefault();
