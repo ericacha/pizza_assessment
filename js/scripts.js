@@ -1,12 +1,24 @@
+// var Pizza = {
+//   cost1 : 1,
+//   cost2 : 2,
+//   pepperoni: function() {
+//     this.cost1;
+//   },
+//   cheese: function() {
+//     this.cost2;
+//   }
+// };
+
 var Pizza = {
-  cost1 : 1,
-  cost2 : 2,
-  pepperoni: function() {
-    this.cost1;
+  pepperoni: 1,
+  cheese: 2,
+  costPepperoni: function() {
+    this.pepperoni;
   },
-  cheese: function() {
-    this.cost2;
+  costCheese: function() {
+    this.cheese;
   }
+
 };
 
 

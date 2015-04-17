@@ -1,16 +1,16 @@
 describe("Pizza", function() {
-  describe("pepperoni", function() {
+  describe("costPepperoni", function() {
     it("the price for pepperoni is 1", function() {
       var testPizza= Object.create(Pizza);
-      testPizza.pepperoni(1);
-      expect(testPizza.cost1).to.equal(1);
+      testPizza.costPepperoni(1);
+      expect(testPizza.pepperoni).to.equal(1);
     });
   });
-  describe("cheese", function() {
+  describe("costCheese", function() {
     it("the price for cheese is 2", function() {
       var testPizza= Object.create(Pizza);
-      testPizza.cheese(2);
-      expect(testPizza.cost2).to.equal(2);
+      testPizza.costCheese(2);
+      expect(testPizza.cheese).to.equal(2);
     });
   });
 });
