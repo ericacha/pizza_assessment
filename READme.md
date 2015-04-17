@@ -1,11 +1,12 @@
-<h1>Triangle Tracker </h1>
+<h1>Pizza </h1>
 
 <b>Description</b>
 
-Lets the user input the lengths of the sides of a triangle, and returns whether they form an equilateral, isosceles, or scalene triangle. If the user enters an invalid triangle, pop an alert when they try to submit the form.
+A website app for user's to order pizza. Show the price for when they order pepporoni or cheese pizza.
 
 
-April 14th, 2015 | Erica Cha
+
+April 16th, 2015 | Erica Cha
 
 <b>Technologies</b>
 
@@ -21,7 +22,7 @@ CSS<br>
 <b>Setup Instructions</b>
 
 Clone this repository.
-Open 'triangle.html' in a web browser (file is in project root directory).
+Open 'pizza.html' in a web browser (file is in project root directory).
 
 <br><br>Copyright © 2015 Erica Cha
 
