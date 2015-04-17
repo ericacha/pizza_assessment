@@ -1,3 +1,14 @@
+var Pizza = {
+  cost1 : 1,
+  cost2 : 2,
+  pepperoni: function() {
+    this.cost1;
+  },
+  cheese: function() {
+    this.cost2;
+  }
+};
+
 $(document).ready(function() {
 
   $("form#user-input").submit(function(event) {
@@ -15,7 +26,7 @@ $(document).ready(function() {
       $("#show-order").show();
       $("#show-order h2").text(newPizza.order);
       $(".new-pizza").text(newPizza.order);
-      
+
     });
   });
 });

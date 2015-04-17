@@ -2,11 +2,11 @@
   display: none;
 }
 
-.order {
+.orders {
   cursor: pointer;
   color: #0088cc;
 }
 
-.order: hover {
+.orders: hover {
   text-decoration: underline;
 }
