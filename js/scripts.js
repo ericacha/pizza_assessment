@@ -1,14 +1,3 @@
-// var Pizza = {
-//   cost1 : 1,
-//   cost2 : 2,
-//   pepperoni: function() {
-//     this.cost1;
-//   },
-//   cheese: function() {
-//     this.cost2;
-//   }
-// };
-
 var Pizza = {
   pepperoni: 1,
   cheese: 2,
@@ -22,7 +11,6 @@ var Pizza = {
 };
 
 
-
 $(document).ready(function() {
 
   $("form#user-input").submit(function(event) {
@@ -30,6 +18,14 @@ $(document).ready(function() {
 
     var inputtedPizza = $("input#new-pizza").val();
     var newPizza = { order : inputtedPizza };
+
+
+
+    // trial
+    // myPepperoni = Object.create(Pizza);
+    // myPepperoni.pepperoni =inputtedPizza;
+    //
+    // myPepperoni.costPepperoni(inputtedPizza);
 
 
     $("ul#orders").append("<li><span class='orderPizza'>" + newPizza.order + "</span></li>");
@@ -40,41 +36,9 @@ $(document).ready(function() {
       $("#show-order").show();
       $("#show-order h2").text(newPizza.order);
       $(".new-pizza").text(newPizza.order);
+      // $(".new-pizza").text(myPepperoni.pepperoni);
+
 
     });
   });
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-// var price = 0;
-//
-// $(document).ready(function(){
-//   $("form#orderP").submit(function(event) {
-//     event.preventDefault();
-//
-//   var pepperoni = { price : 2 };
-//   var cheese = { price : 1 };
-//
-//   var cost = { amount: [pepperoni, cheese] };
-//
-//   cost.amount.forEach(function(total) {
-//     $("#result").text(price);
-//   });
-//
-//   var inputtedPepperoni = $(".btnP").val();
-//   newPepperoni = {pepporoni: inputtedPepperoni};
-//
-//
-//   });
-// });
