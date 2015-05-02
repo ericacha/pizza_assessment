@@ -1,44 +1,32 @@
 var Pizza = {
-  pepperoni: 1,
-  cheese: 2,
-  costPepperoni: function() {
-    this.pepperoni;
-  },
-  costCheese: function() {
-    this.cheese;
-  }
-
+    init:function() {
+        this.price = 10
+    },
+    setPrice:function(kind)  {
+        this.price += kind;
+    }
 };
 
+var newPizza = Object.create(Pizza);
 
 $(document).ready(function() {
 
-  $("form#user-input").submit(function(event) {
+
+    $("form#pizza").submit(function(event) {
+
     event.preventDefault();
 
-    var inputtedPizza = $("input#new-pizza").val();
-    var newPizza = { order : inputtedPizza };
+    newPizza.init();
+
+    var price = parseInt($("select#options").val());
+
+    newPizza.setPrice(price);
+
+    var totalPrice = newPizza.price;
 
 
+    $("#final_price").text(totalPrice);
 
-    // trial
-    // myPepperoni = Object.create(Pizza);
-    // myPepperoni.pepperoni =inputtedPizza;
-    //
-    // myPepperoni.costPepperoni(inputtedPizza);
-
-
-    $("ul#orders").append("<li><span class='orderPizza'>" + newPizza.order + "</span></li>");
-
-    $("input#new-pizza").val("");
-
-    $(".orderPizza").last().click(function() {
-      $("#show-order").show();
-      $("#show-order h2").text(newPizza.order);
-      $(".new-pizza").text(newPizza.order);
-      // $(".new-pizza").text(myPepperoni.pepperoni);
-
-
-    });
   });
+
 });

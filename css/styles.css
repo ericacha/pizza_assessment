@@ -1,12 +1,1 @@
-#show-order {
-  display: none;
-}
 
-.orders {
-  cursor: pointer;
-  color: #0088cc;
-}
-
-.orders: hover {
-  text-decoration: underline;
-}
